@@ -1,0 +1,45 @@
+New Commands which i learnt
+
+id ec2-user
+useradd dba
+groupadd oracle
+usermod -a -G oracle dba /flash or branch name in (cd .git/logs/refs/head) eg develop (exit and login again to see the changes)
+chmod ug=rwx,o-r /flash or develop
+chown oracle:dba develop or /flash
+
+Network
+route
+ipconfig
+
+Storage
+	Disk Free
+		df -hT
+	Disc Usage
+		du -sh *
+
+Cores
+cat /proc/cpuinfo | grep core
+lscpu | grep CPU
+
+CPU
+top and htop
+echo "CPU Usage: "$[100-$(vmstat 1 2|tail -1|awk '{print $15}')]"%"
+cat /proc/cpuinfo | grep cores
+lscpu
+
+Memory
+free -g
+
+OS
+cat /etc/os-version
+uname -a
+
+Timezone
+date
+timedatectl
+
+vgs???
+ps -ef
+
+Normally all packages are in
+cat /opt/sonarqube
